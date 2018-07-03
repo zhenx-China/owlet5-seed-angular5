@@ -16,8 +16,8 @@ owlet5-seed是基于angular5实现的前端种子工程
 2. 执行`npm install`安装依赖
 
     > 安装依赖前，执行以下命令设置npm下载地址  
-    > `npm config set registry=http://172.18.24.36:7001/`  
-    > `npm config set SASS_BINARY_SITE=http://172.18.24.51:8081/nexus/content/sites/gs-assets/node/sass/`
+    > `npm config set registry=http://ip:port/`  
+    > `npm config set SASS_BINARY_SITE=http://ip:port/nexus/content/sites/gs-assets/node/sass/`
 
 3. 执行`npm start`开启本地开发服务器，并自动打开浏览器访问`http://localhost:4200`
 
