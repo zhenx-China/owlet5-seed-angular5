@@ -1,0 +1,9 @@
+{
+  "login": "Sign In",
+  "logout": "Sign Out",
+  "loading": "Trying to sign in...",
+  "loginModule": "Login Module",
+  "changeLanguage": "Change Language",
+  "bussiness": "Bussiness {{number}}",
+  "view": "View {{number}}"
+}

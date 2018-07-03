@@ -1,0 +1,19 @@
+<h2>{{ 'view' | translate: {number: '2'} }}</h2>
+
+<button [disabled]="loading" (click)="handleClick()">{{ buttonText }}</button>
+
+<br/>
+<br/>
+<br/>
+
+<input [(ngModel)]="text">
+<p [innerText]="text"></p>
+
+<input [ngModel]="text" (ngModelChange)="text=$event">
+<p [innerText]="text"></p>
+
+<app-sizer [(size)]="size"></app-sizer>
+<input [(ngModel)]="size">
+
+<p [innerText]="person?.name"></p>
+<p [innerText]="person?.age"></p>

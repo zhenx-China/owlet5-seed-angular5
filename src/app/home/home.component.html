@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="left">
+    <div class="content">
+      <a routerLink="/bussiness1">{{ 'bussiness' | translate: {number: '1'} }}</a>
+      <ul>
+        <li>
+          <a routerLink="/bussiness1/view1">{{ 'view' | translate: {number: '1'} }}</a>
+        </li>
+      </ul>
+      <a routerLink="/bussiness2">{{ 'bussiness' | translate: {number: '2'} }}</a>
+      <ul>
+        <li>
+          <a routerLink="/bussiness2/view2">{{ 'view' | translate: {number: '2'} }}</a>
+        </li>
+        <li>
+            <a routerLink="/bussiness2/view3">{{ 'view' | translate: {number: '3'} }}</a>
+          </li>
+      </ul>
+      <button (click)="logout()" translate>logout</button>
+    </div>
+  </div>
+  <div class="right">
+    <h1>Home Component</h1>
+    <router-outlet></router-outlet>
+  </div>
+</div>

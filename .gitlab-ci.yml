@@ -1,0 +1,35 @@
+before_script:
+  - npm config set registry=http://172.18.24.36:7001/
+  - npm config set SASS_BINARY_SITE=http://172.18.24.51:8081/nexus/content/sites/gs-assets/node/sass/
+  - npm install
+
+after_script:
+
+stages:
+  - lint
+  - test
+  - dist
+
+lint:
+  stage: lint
+  script:
+    - npm run lint
+  only:
+    - develop
+    
+test:
+  stage: test
+  script:
+    - npm run test
+  only:
+    - develop
+    
+dist:
+  stage: dist
+  script:
+    - npm run dist
+    - sed -i 's/5.0.1-ci/5.0.1-ci.'$CI_JOB_ID'/g' package.json
+    - npm publish
+  only:
+    - develop
+

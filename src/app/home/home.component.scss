@@ -1,0 +1,35 @@
+%full-height {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+%full-width {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  @extend %full-height;
+  @extend %full-width;
+}
+
+.left {
+  @extend %full-height;
+  left: 0;
+  width: 20%;
+}
+
+.right {
+  @extend %full-height;
+  right: 0;
+  width: 80%
+}
+
+.content {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+
